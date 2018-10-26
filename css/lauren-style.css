@@ -1,0 +1,200 @@
+#google {
+       
+        font-family: 'Cabin', sans-serif;
+        font-weight: 100;
+}
+
+/* .grid-container.about-lauren li{
+
+    list-style-type: none;
+} */
+
+.prove {
+
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 700;
+}
+
+
+.for-class p {
+    font-family: 'Courier New', Courier, monospace;
+
+
+}
+
+.for-class .hello {
+
+    font-weight: 300;
+}
+
+
+.for-class .goodbye{
+
+    background-color: rgb(236, 178, 178);
+}
+
+.for-class .why {
+
+    text-align: right;
+}
+
+
+div.more-selectors ul {
+
+    margin: 1fr;
+}
+
+ul li.adjust {
+
+    color:brown;
+}
+
+div.more-selectors p {
+
+    color: green;
+}
+
+
+.grid-container.about-lauren{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 10px;
+    
+    
+  }
+
+  .grid-container.about-lauren>div {
+   
+    text-align: left;
+    padding:20px 0;
+    font-size: 30px;
+  }
+
+
+
+  a.micro{
+    grid-template-columns: .5fr .5fr;
+    /* Why didn't this work? I'm trying to have each picture take up half of the column. */
+
+  }
+
+  .more-selectors {
+      margin: 10%;
+
+  }
+
+  #need {
+      color: brown;
+  }
+
+  img.microphone {
+
+    width: 49%;
+    display: inline-block!important;
+
+  }
+
+  img.microphone.side-pat{
+
+    padding: 0 0 0 5%;
+  }
+
+
+  /* body:after {
+    content: "less than 320px";
+    font-size: 300%;
+    font-weight: bold;
+    position: fixed;
+    bottom: 60px;
+    width: 100%;
+    text-align: center;
+    background-color: hsla(1,60%,40%,0.7);
+    color: #fff;
+} */
+
+.invisible{
+    display: none;
+}
+
+
+
+
+
+
+/* @media only screen and (min-width: 320px) {
+    body:after {
+        content: "320 to 480px";
+        background-color: hsla(90,60%,40%,0.7);
+    }
+    h1 {}
+}
+@media only screen and (min-width: 480px) {
+    body:after {
+        content: "480 to 768px";
+        background-color: hsla(180,60%,40%,0.7);
+    }
+}
+@media only screen and (min-width: 768px) {
+    body:after {
+        content: "768 to 1024px";
+        background-color: hsla(270,60%,40%,0.7);
+    }
+}
+@media only screen and (min-width: 1024px) {
+    body:after {
+        content: "1024 and up";
+        background-color: hsla(360,60%,40%,0.7);
+    }
+} */
+
+@media only screen and (min-width: 320px) {
+
+    .grid-container.management-tips{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-gap: 50px;
+        padding-top: 10vh;
+
+    }
+
+    .grid-item padding {
+        padding-top: 15%
+    }
+
+    .grid-item padding extra{
+
+        padding-top: 15%
+        /* Why isn't this working to add padding on the top of #1 */
+    }
+    /* h1{
+        font-size: 5px;
+    } */ 
+
+    /* How do I get this to work??? */
+
+  }
+
+
+  @media only screen and (orientation: landscape) {
+    .grid-container.management-tips{
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        grid-gap: 50px;
+        padding-top: 10vh;
+        }
+    }
+
+
+@media only screen and (min-width: 480px) {
+
+    
+
+  .grid-container.management-tips{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-gap: 50px;
+    padding-top: 10vh;
+    
+  }
+
+}
